@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+body{
+    text-align: center;
+    color: black;
+}
+
+header img{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    opacity: 0.4;
+    display: inline-block;
+}
+
+
+.line{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.line span{
+    flex: 1;
+    border-top: 1px solid black;
+    margin: 0 20px;
+}
+
+
+
+/*NIGHT MODE */
+
+label{
+    position: absolute;
+    width: 45px;
+    height: 22px;
+    right: 20px;
+    top: auto;
+    border: 2px solid;
+    border-radius: 20px;
+}
+label:before{
+    position: absolute;
+    content:"";
+    width: 15px;
+    height: 15px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: black;
+    transition: 0.4s;
+    color: black;
+}
+
+label.active:before{
+    left: 24px;
+    background: white;
+}
+
+body.night{
+    background: black;
+    color: white;
+}
+
+
+/*PARTE TESTUALE / IMMAGINI */
+
+#astro{
+    position: relative;
+    width: 300px;
+    display: flex;
+    border: 2px solid;
+    top: 100px;
+    float: left;
+    margin: 10px;
+}
+
+
+.box{
+    position: relative;
+    display: flex;;
+    flex-direction: column;
+    border: 2px solid;
+    padding: auto;
+    top: 100px;
+}
+#definizione{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#definizione ~ p{
+    padding: 30px;
+    
+}
+#mode{
+    font-family: 'Times New Roman', Times, serif;
+}
+#topp{
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+
+}
+.highlight{
+    background-color: yellow;
+}
+
+
+#astro2{
+    position: relative;
+    width: 300px;
+    display: flex;
+    float: right;
+    border: 2px solid;
+    top: 100px;
+}
+
+
+
+.container {
+    margin-bottom: 20px; 
+}
+
+.footer{
+        background-color: black;
+        margin-bottom: 0;
+        display: flex;
+        margin-top: 300px;
+        padding: 20px;
+        bottom: 0;
+        
+}
+
+/*MENU DEL FOOTER*/
+.menu li a{
+    color: white;
+    text-decoration: none;
+}
+.menu li{
+    list-style: none;
+}
+.menu li a{
+    position: relative;
+    overflow: hidden;
+}
+.menu li a:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    background: white;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.menu li a:hover:before{
+    width:100%;
+}
+
+.linea-menu{
+    border-left: 1px solid;
+    margin-right: 10px;
+    color: white;
+}
+
+
+.testo-menu{
+    color: white;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column-reverse;
+    float: left;
+}
+
+#title{
+    text-align: center;
+    display: flex;
+    color: white;
+}
+
+
+
+
+/*SEARCHBAR DEL FOOTER*/
+.search{
+    display:flex;
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#newsletter{
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.searchbar{
+    height: 50px;
+    
+
+}
+.search-button{
+    height: 50px;
+    color: black;
+    background-color: lightblue;
+    width: 150px;
+   
+}
+
+#goback a{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#goback a:before{
+    content:'';
+    position: absolute;
+    width: 0;
+    background: purple;
+    height: 2px;
+    bottom: -3px;
+    left: 0px;
+    transition: width 0.3s ease;
+}
+#goback a:hover{
+    color:purple;
+}
+#goback a:hover:before{
+    width: 100%;
+}
+
+.goback a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    left: 0;
+}
+.goback a:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    background: yellow;
+    height: 2px;
+    bottom: -3px;
+    left: 0px;
+    transition: width 0.3s ease;
+}
+.goback a:hover{
+    color: yellow;
+}
+.goback a:hover:before{
+    width: 100%;
+}
+p{
+    font-size: clamp(12px, 2vw, 30px);
+}
+h1{
+    font-size: clamp(20px, 6vw, 40px);
+}
+a{
+    font-size: clamp(10px, 1.6vw, 20px);
+}
